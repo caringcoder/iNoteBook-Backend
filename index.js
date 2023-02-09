@@ -5,6 +5,7 @@ connection();
 const app = express()
 const port = 5000
 
+app.use(express.json());
 //Routes
 const authRoute = require('./routes/auth')
 app.use('/api/auth',authRoute)
